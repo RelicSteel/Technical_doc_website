@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech.Docs - Technical Documentation Hub</title> <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Tech.Docs</a>
+        <div class="nav-links">
+            <a href="#" onclick="loadDocument('intro')">Home</a>
+            <a href="#" onclick="loadDocument('api')">API Docs</a>
+            <a href="#" onclick="loadDocument('tutorial')">Tutorials</a>
+            <a href="#" onclick="loadDocument('faq')">FAQ</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="content" id="main-content">
+            <h1>Welcome to Tech.Docs</h1>
+            <p>Your hub for technical documentation resources. Explore our collection of guides, API documentation, tutorials, and FAQs. We also provide links to other valuable technical document repositories.</p>
+            <div class="external-links">
+                <h3>External Technical Documentation</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://docs.microsoft.com" target="_blank">Microsoft Docs</a></li>
+                    <li><a href="https://docs.aws.amazon.com" target="_blank">AWS Documentation</a></li>
+                    <li><a href="https://cloud.google.com/docs" target="_blank">Google Cloud Documentation</a></li>
+                    <li><a href="https://docs.docker.com" target="_blank">Docker Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <aside>
+            <h2>Chat Support</h2>
+            <div id="chatbox"></div>
+            <input type="text" id="chat-input" placeholder="Type your message here..." onkeypress="handleChatInput(event)">
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tech.Docs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
